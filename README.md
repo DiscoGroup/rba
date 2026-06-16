@@ -17,3 +17,7 @@ Then open http://localhost:4173/.
 This site is already built as static HTML, CSS, JavaScript, fonts, and images. Deploy the repository root as the public directory.
 
 For GitHub Pages, use the root of the `main` branch and keep `.nojekyll` in place so hashed asset paths are served unchanged.
+
+## Security headers
+
+GitHub Pages does not support custom response headers from repository files. The included `_headers`, `netlify.toml`, and `vercel.json` files provide the intended A+ security-header policy for Cloudflare Pages, Netlify, and Vercel.
