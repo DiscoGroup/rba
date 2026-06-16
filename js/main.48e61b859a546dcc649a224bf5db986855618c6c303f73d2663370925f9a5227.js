@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
         .then(res => {
           if (res.ok) {
-            window.location.href = '/contact/thank-you/';
+            window.location.href = '/rba/contact/thank-you/';
           } else {
             return res.json().then(data => {
               const msg = data && data.errors && data.errors.length
